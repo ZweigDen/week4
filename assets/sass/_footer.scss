@@ -1,0 +1,152 @@
+/*footer*/
+.footer{
+	background-color: #AA0601;
+	padding-top: 36px;
+	padding-bottom: 27px;
+}
+.footerContent{
+	max-width: 1150px;
+	margin: 0 auto;
+}
+.footerMenu{
+	display: flex;
+	justify-content: space-between;
+	ul{
+		display: flex;
+		align-items: center;
+		margin-bottom: 18px;
+	}	
+}
+.menuLeft a{
+	font-size: 16px;
+	line-height: 24px;
+	color:#fff;
+	text-decoration: none;
+}
+/*左邊li右推*/
+.menuLeft li{
+	margin-right: 48px;
+}
+/*右邊logo右推*/
+.menuRight li{
+	margin-left: 32px;
+}
+.phoneMail {
+	font-size: 36px;
+	line-height: 54px;
+	color:#fff;
+	display: flex;
+	flex-direction: column;
+	li{
+		display: flex;
+		margin-bottom: 16px;
+	}
+	img{
+		margin-right: 12px;
+	}
+} 
+/*最底部*/
+.copyright{
+	padding-top: 24px;
+	border-top:1px solid #fff;
+	display: flex;
+	justify-content: space-between;
+	ul{
+		display: flex;
+		align-items: center;
+	}
+	li{
+		font-size: 16px;
+		line-height: 24px;
+		color:#fff;
+	}
+	img{
+		margin-right: 38px;
+	}
+	a{
+		text-decoration: none;
+		color:#fff;
+		font-size: 14px;
+		line-height: 21px;
+	}
+}
+.privacy li{
+	margin-left: 62px;
+}
+
+@media(max-width:768px){
+	.footer{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.footerContent{
+		max-width: 672px;
+	}
+	.menuLeft li{
+	margin-right: 40px;
+	}
+	.menuRight li{
+	margin-left: 24px;
+	}
+	.menuRight img{
+		width: 24px;
+	}
+	.phoneMail{
+		font-size: 20px;
+		line-height: 30px;
+		img{
+			width: 32px;
+		}
+	} 
+	/*隱藏logog*/
+	.logoHide{
+		display: none;
+	}
+}
+@media(max-width:375px){
+	.footer{
+		padding-top: 24px;
+		padding-bottom: 20px;
+	}
+	.footerContent{
+		max-width:351px;
+	}
+	/*隱藏選單*/
+	.menuHide.menuHide{
+		display: none;
+	}
+	/*將fb連結定位在右方*/
+	.footerMenu{
+		position: relative;
+	}
+	.menuRight{
+		position: absolute;
+		top:0;
+		right:0;
+	}
+	.phoneMail img{
+		width: 20px;
+	}
+	.copyright{
+		flex-direction: column;
+		position: relative;
+		img{
+		margin-right: 0;
+		}		
+	}
+	.privacy.privacy{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.privacy li{
+		margin-left: 0;
+	}
+	/*打開375pxlogo*/
+	.logoHide{
+		display: block;
+		width: 46px;
+		position: absolute;
+		right:0;
+		bottom:0;
+	}
+}

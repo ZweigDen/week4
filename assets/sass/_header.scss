@@ -1,0 +1,125 @@
+.wrap{
+	margin: 0 auto;
+}
+/*首頁logo與menu*/
+.menu{
+	background: #AA0601;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 88px;
+	ul{
+		display: flex;
+	}
+	li{
+	margin-left: 64px;
+		a{
+			text-decoration: none;
+			color: #FFFFFF;
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+}
+ 
+/*選單隱藏*/
+.showMenu{
+	display: none;
+}
+
+/*背景*/
+.headerImg{
+	background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
+	background-position: center center;
+	background-size: cover;
+	height: 840px;
+	text-align: right;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	/*讓內容向內推*/
+	padding-right: 18.75%;
+	h2{
+		font-size: 64px;
+		line-height: 96px;
+		color:#650300;
+	}
+	p{
+		font-size: 36px;
+		line-height: 54px;
+		color: #650300;
+	}
+}
+
+@media(max-width:768px) {
+	.menu{
+		padding: 30px 48px;
+		li{
+			margin-left: 40px;
+		}
+	}
+	.headerImg{
+		background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true");
+		padding-right: 6.25%;
+		h2{
+			font-size: 48px;
+			line-height: 72px;
+		}
+		p{
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+}
+@media(max-width:375px){
+	.menu{
+		/*讓隱藏選單定位*/
+		position: relative;
+		padding: 10px 0;
+		justify-content: center;
+		ul{
+			/*隱藏選單開始*/
+			max-height:0;
+			overflow: hidden;
+			/*隱藏選單結束*/
+			flex-direction: column;
+			transition:max-height 2.3s;
+			position: absolute;
+			z-index: 100;
+			top:50px;
+			left:0;
+			right:0;
+			background: #AA0601;
+		}
+		li{
+			border:1px solid #fff;
+		text-align: center;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		margin-left: 0;
+		}
+	}
+	.topLogo img{
+		width: 48px;
+	}
+	/*讓選單出現*/
+	/*jQ點擊後動態在body加上class*/
+	.showMenu{
+		display: block;
+		position: absolute;
+		left:16px;
+	}
+	.menu-show .menu ul{
+    	max-height: 500px;
+  		}
+  	.headerImg{
+  		height: 394px;
+  		h2{
+  			font-size: 32px;
+  		}
+  		p{
+  			font-size: 16px;
+  		}
+  	}
+}
+

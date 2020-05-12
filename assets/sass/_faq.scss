@@ -1,0 +1,129 @@
+.faqHeader{
+	background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true");
+	background-size: cover;
+	background-position: center center;
+	height: 304px;
+	font-size: 64px;
+	line-height: 80px;
+	position: relative;
+	h1{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		bottom:0;
+		left:18.75%;
+	}
+	img{
+		margin-left: 8px;
+	}
+}
+ 
+
+.faqContent{
+	max-width:1200px;
+	margin: 0 auto;
+	padding-top: 88px;
+	padding-bottom: 156px;
+	h2{
+		font-size: 32px;
+		line-height: 63px;
+		padding-bottom: 16px;
+	}
+	table{
+		display: block;
+		width: 100%;
+	}
+	tbody{
+		display: block;
+		width: 100%;
+	}
+	tr {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	}
+	th{
+		border:1px solid black;
+		padding: 22px 38px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 20px;
+		line-height: 23px;
+	}
+	td{
+		border:1px solid black;
+		padding: 22px 38px;
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+		line-height: 24px;
+		background-color: #F2F2F2;
+	}
+}
+
+@media(max-width:768px){
+	.faqHeader{
+		font-size: 48px;
+		line-height: 80px;
+		h1{
+			left:6.25%;
+		}
+		img{
+			margin-left: 16px;
+			width: 48px;
+		}
+	}
+	.faqContent{
+		max-width:672px;
+		padding-top: 40px;
+		padding-bottom: 104px;
+		h2{
+			font-size: 28px;
+			line-height: 63px;
+			margin-bottom: 32px;
+		}
+		th{
+			font-size: 16px;
+			line-height: 24px;
+			padding: 16px 24px;
+		}
+		td{
+			font-size: 14px;
+			line-height: 21px;
+			padding: 16px 24px;
+		}
+	}
+}
+
+@media(max-width:375px){
+	.faqHeader{
+		line-height: 48px;
+		height: 143px;
+		font-size: 28px;
+		h1{
+			left:11px;
+		}
+		img{
+			width: 24px;
+		}
+	}
+	.faqContent{
+		max-width:352px;
+		padding-top: 24px;
+		padding-bottom: 56px;
+		h2{
+			font-size: 20px;
+			margin-bottom: 16px;
+		}
+		th{
+			padding-left: 16px;
+			padding-right: 8px;
+		}
+		td{
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+	}
+}
+	

@@ -1,0 +1,392 @@
+/*網頁內容*/
+/*用專業的新作專業的是*/
+.conTop{
+	background: #AA06010D;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 64px;
+	padding-bottom: 80px;
+	h2{
+		font-size: 48px;
+		line-height: 72px;
+		color:#650300;
+		margin-bottom: 44px;
+	}
+	ul{
+		display: flex;
+		justify-content: center;
+	}
+	li{
+		max-width: 282px;
+		margin: 0 12px 0 12px;
+		padding: 16px 37px 0 37px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	img{
+	margin-bottom: 40px;
+	}
+	h3{
+	font-size: 24px;
+	line-height: 36px;
+	color:#650300;
+	margin-bottom: 4px;
+	}
+	p{
+	font-size: 16px;
+	line-height: 24px;
+	}
+}
+
+/*將價格li排到第一位*/
+.money{
+	order:-1;
+}
+/*眼鏡微調*/
+.glass.glass{
+	padding-top: 32px;
+	img{
+		margin-bottom: 54px;
+	}
+}
+ 
+@media(max-width:768px){
+	.conTop{
+		padding-top: 40px;
+		padding-bottom: 48px;
+		ul{
+			flex-wrap: wrap;
+		}
+		li{
+			margin-bottom: 12px;
+		}
+		img{
+			width: 80px;
+		}
+		h2{
+			font-size: 32px;
+			line-height: 48px;
+		}
+		h3{
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+/*將價格li復位*/
+	.money{
+		order:0;
+	}
+}
+
+@media(max-width: 375px){
+	.conTop h2{
+		font-size: 24px;
+		margin-bottom: 32px;
+		img{
+			margin-bottom: 16px;
+		}
+		li{
+			margin-bottom: 28px;
+		}
+	}
+	/*眼鏡微調*/
+	.glass.glass img{
+		margin-bottom: 27px;
+	}
+}
+
+/*經典系列*/
+.conMid{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 64px;
+	padding-bottom: 48px;
+	li{
+		display: flex;
+		align-items: center;
+		margin-bottom: 32px;
+	}
+	img{
+		display: block;
+	}
+	h2{
+		font-size: 48px;
+		line-height: 72px;
+		color:#650300;
+		margin-bottom: 60px;
+	}
+	p{
+		font-size: 48px;
+		line-height: 72px;
+		color:#AA0601;
+	}
+} 
+.logo{
+	display: flex;
+	img{
+		margin-right: 8px;
+		margin-left: 24px;
+	}
+}
+
+/*隱藏白色logo*/
+.hide{
+	display: none;
+}
+/*order在左邊*/
+.sunGlass{
+	order:-1;
+	margin-right: 24px;
+}
+@media(max-width: 768px){
+	.conMid{
+		padding-top: 40px;
+		padding-bottom: 32px;
+		li{
+			margin-bottom: 8px;
+		}
+		h2{
+			font-size: 28px;
+			line-height: 42px;
+		}
+		p{
+			font-size: 28px;
+			line-height: 42px;
+		}
+		img{
+			width: 410px;
+		}
+	}
+	.logo img{
+		width: 32px;
+	}
+	.daimond{
+		margin-left: 40px;
+	}
+	/*太陽歸位*/
+	.sunGlass{
+		order:0;
+	}
+}
+@media(max-width: 375px){
+	.conMid{
+		padding-top: 24px;
+		padding-bottom: 16px;
+		img{
+			width: 352px;
+		}
+		h2{
+			font-size: 24px;
+			line-height: 48px;
+			margin-bottom: 16px;
+		}
+	} 
+	.logo{
+		display: none;
+	}
+	.conMid li{
+		position: relative;
+	}
+	/*將選單圖示打開*/
+	.hide{
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		p{
+			color:#fff;
+			font-size: 28px;
+			line-height: 42px;
+		}
+	}
+	.dai{
+		left:99px;
+		img{
+			width: 32px;
+			margin-right: 8px;
+		}
+	}
+	.sun{
+		left:69.5px;
+		img{
+			width: 32px;
+			margin-right: 8px;
+		}
+	}
+	.thund{
+		left:77px;
+		img{
+			width: 23px;
+			margin-right: 8px;
+		}
+	}
+}
+
+/*聯名設計*/
+.conDown{
+	background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 64px;
+	img{
+		display: block;
+	}
+	h2{
+		font-size: 48px;
+		line-height: 72px;
+		color:#fff;
+		margin-bottom: 60px;
+	}
+}
+.box1{
+	display: flex;
+	margin-bottom: 60px;
+}
+.box2{
+	display: flex;
+	flex-direction: column;
+	margin-left: 8px;
+}
+.box3{
+	display: flex;
+	margin-top: 8px;
+}
+.box4{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	display: block;
+	margin-left: 8px;
+}
+.box5{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	right:83px;
+	margin-top: 8px;
+}
+.box6 {
+	background-color: #fff;
+	display: flex;
+	font-size: 72px;
+	line-height: 108px;
+	color:#AA0601;
+	padding-left: 12px;
+	padding-right: 14px;
+	position: absolute;
+	top:32px;
+	right:-83px;
+	img{
+		margin-left: 17px;
+	}
+}
+.glass2{
+	display: flex;
+	margin-bottom: 144px;
+	p{
+		color:#AA0601;
+		font-size: 72px;
+		line-height: 108px;
+		position: absolute;
+		z-index: 1;
+	}
+	li{
+		margin: 0 15px;
+		background: #fff;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		img{
+		opacity:0.5;
+		}
+	}
+}
+ 
+@media(max-width: 768px){
+	.box1 {
+		max-width: 672px;
+	}
+	.w251{
+		max-width: 251px;
+	}
+	.box6 h3{
+		font-size: 26px;
+		line-height: 20px;
+	}
+	.glass2 p{
+		font-size: 32px;
+		line-height: 25px;
+	}
+}
+@media(max-width:375px){
+	.glass2{
+		flex-wrap: wrap;
+		p{
+			font-size: 32px;
+			line-height: 25px;
+		}
+		li{
+			margin-bottom: 20px;
+		}
+	}
+	.w251{
+		max-width: 156px;
+	}
+}
+
+/*顧客推薦*/
+.customer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img{
+		margin-bottom: 16px;
+	}
+	ul{
+		display:flex;
+		justify-content: center;
+		margin-bottom: 80px;
+	}
+	li{
+		max-width: 282px;
+		margin: 0 12px;
+		background-color: #fff;
+		border:1px solid #DEE2E6;
+	}
+	h3{
+		font-size: 16px;
+		line-height: 21px;
+		margin-bottom: 16px;
+		padding-left: 16px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 16px;
+		padding-left: 16px;
+	}
+} 
+.gray{
+	color:#707070;
+}
+@media(max-width:768px){
+	.customer{
+		font-size: 32px;
+		line-height: 48px;
+		margin-bottom: 32px;
+		ul{
+			flex-wrap: wrap;
+			margin-bottom: 40px;
+		}
+		li{
+			margin-bottom: 24px;
+		}
+	}
+}

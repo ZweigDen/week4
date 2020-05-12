@@ -1,0 +1,98 @@
+/*聯絡我們*/
+.connection{
+	background-color: #AA06010D;
+	padding-top: 64px;
+	padding-bottom: 92px;
+}
+.form{
+	margin: 0 auto;
+	max-width: 792px;
+	h2{
+		font-size: 48px;
+		line-height: 72px;
+		text-align: center;
+		margin-bottom: 24px;
+	}
+	p{
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	h3{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 4px;
+	}
+	form{
+		display: flex;
+		flex-direction: column;
+	}
+}
+.input {
+	margin-bottom: 16px;
+	height: 50px;
+}
+.floatBox{
+	display: flex;
+}
+.checkbox{
+	margin-bottom: 42px;
+}
+.textarea{
+	height: 136px;
+	margin-bottom: 16px;
+}
+.submit{
+	background-color: #AA0601;
+	color:#fff;
+	font-size: 16px;
+	line-height: 24px;
+	width: 180px;
+	height: 54px;
+	margin: 0 auto;
+}
+@media(max-width:768px){
+	.connection{
+		padding-top: 40px;
+		padding-bottom: 56px;
+	}
+	.form{
+		max-width:496px;
+		h2{
+			font-size: 32px;
+			line-height: 48px;
+			margin-bottom: 16px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 16px;
+		}
+	}
+	.submit{
+		width: 136px;
+		height: 36px;
+	}
+}
+@media(max-width:375px){
+	.connection{
+		padding-top: 24px;
+		padding-bottom: 48px;
+	}
+	.form{
+		max-width: 327px;
+		h2{
+			font-size: 20px;
+			margin-bottom: 8px;
+		}
+	}
+	.input{
+		height: 36px;
+	}
+	.textarea{
+		height: 100px;
+	}
+	.checkbox h3{
+		font-size: 14px;
+	}
+}
